@@ -1,0 +1,246 @@
+.loginB{
+    background-image: url(../images.pexeso/background.png);
+    background-size: 100%;
+    background-color: #ffffff;
+    display: flex;
+    height: 100%;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    margin: unset;
+    padding: unset;
+    align-items: center;
+}
+html{
+    height: 100%;
+}
+body{
+    font-size: 30px;
+    font-family: Verdana, "Verdana CE", Arial, "Arial CE", "Helvetica CE", sams-serif;
+    color: #000000;
+    height: 100%;
+}
+
+h1{
+    font-family: Broadway, "Brodway", "Brodway", sams-serif;
+    font-size: 350%;
+    font-weight: bold;
+    margin: unset;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10%;
+}
+
+h2{
+    font-family: Broadway, "Brodway", "Brodway", sams-serif;
+    font-size: 150%;
+    display: flex;
+    color: white;
+    flex-direction: column-reverse;
+    margin: 3%;
+    align-items: center;
+}
+form{
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+a:link, a:visited{
+    color: chartreuse;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:link:hover, a:visited:hover{
+    color: darkorchid;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.loginP{
+    background-color: black;
+    border: black;
+    width: 30%;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.button{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: 1px solid;
+    border-color: white;
+    cursor: pointer;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    border-radius: 25px;
+    width: 50%;
+    font-size: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.bar{
+    background-color: black;
+    color: white;
+    border: white;
+    text-align: center;
+    height: 30px;
+    width: 50%;
+    text-size-adjust: 50%;
+    border: 1px solid;
+    margin-bottom: 3%;
+    border-radius: 10px;
+}
+
+a{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.tables{
+    width: 100%;
+    font-size: 60%;
+}
+
+.game{
+    width: 70%;
+    margin-top: -1%;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.menu{
+    width: 100%
+}
+
+.pexesoB{
+    margin: unset;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    background-color: black;
+}
+
+
+
+img{
+    width: 100%;
+}
+table{
+    width: 60%;
+}
+tr{
+
+}
+td{
+    width: 10%;
+    border: 1px solid;
+    border-color: white;
+}
+span{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    color: white;
+}
+
+.leftSide{
+    width: 30%;
+    height: 100%;
+}
+h3 {
+    font-family: Broadway, "Brodway", "Brodway", sams-serif;
+    font-size: 200%;
+    font-weight: bold;
+    margin: unset;
+    color: white;
+    margin-bottom: 5%;
+}
+.headerP{
+    margin: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 5%;
+}
+label{
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+h4{
+    margin: unset;
+    margin-bottom: 3%;
+}
+ol{
+    margin: unset;
+}
+.tableSpan{
+    display: inline;
+    margin: unset;
+}
+
+.tablesPlayer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+.headerWithStats{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.info{
+    border-bottom-style: outset;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ServiceSpan{
+    margin: unset;
+    display: flex;
+}

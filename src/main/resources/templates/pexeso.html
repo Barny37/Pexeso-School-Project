@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="eg">
+<head>
+    <meta charset="UTF-8">
+    <title>Pexeso</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+<body class="pexesoB">
+
+<div class="game">
+    <span th:utext="${@pexesoController.getHtmlField()}"/>
+</div>
+
+<div class="leftSide">
+    <div class="headerP" >
+        <h3>Pexeso</h3>
+        <a href="/">
+            <input class="button" type="submit" value="Back"/><br/>
+        </a>
+
+    </div>
+    <a href="/pexeso/new">
+        <input class="button" type="submit" value="New game"/><br/>
+    </a>
+    <span class="headerWithStats" th:if="${@userController.logged}">
+       <label >
+           Logged as:
+       </label>
+       <span  th:text="${@userController.loginPlayer.logins}"/>
+        <a href="/logout">
+        <input  class="button" type="submit" value="Logout"/><br/>
+    </a>
+    </span>
+
+
+    <div class="tablesPlayer">
+        <div class="info">
+            <label>Score:</label>
+            <span  th:text="${@pexesoController.playerI.score}"/>
+        </div>
+        <div class="info">
+            <label>Moves:</label>
+            <span  th:text="${@pexesoController.playerI.moves}"/>
+        </div>
+    </div>
+
+    <div class="menu">
+    <span th:if="${@pexesoController.setingUp}">
+        <h2 class="h2M">Menu</h2>
+<form action="/pexeso/menu">
+    Rows: <input class="bar" type="number" name="rows" VALUE="8"><br>
+    Colums:<input class="bar" type="number" name="columns" VALUE="8"><br>
+    <a href="/pexeso/menu">
+        <input class="button" type="submit" value="Set up game">
+    </a>
+</form>
+    </span>
+    </div>
+
+    <div class="tables">
+   <span class="tableSpan" th:if="${@pexesoController.playing}">
+<h4>Scores</h4>
+<ol>
+    <li th:each="score :${scores}">
+        <span class="tableSpan" th:text="${score.player}"/>
+        <span class="tableSpan" th:text="${score.score}"/>
+    </li>
+</ol>
+       <h4>Comments</h4>
+<ol>
+    <li th:each="comment :${comments}">
+        <span class="tableSpan" th:text="${comment.player}"/>
+        <span class="tableSpan" th:text="${comment.comment}"/>
+    </li>
+</ol>
+       <h4>Rattings</h4>
+<ol>
+    <li th:each="rating :${ratings}">
+        <span class="tableSpan" th:text="${rating.player}"/>
+        <span class="tableSpan" th:text="${rating.rating}"/>
+    </li>
+</ol>
+    </div>
+
+    </span>
+    <div class="tables">
+   <span class="ServiceSpan" th:if="${@pexesoController.won}">
+<h3>You won</h3>
+       <h4>Add Comments</h4>
+       <form action="pexeso/comment">
+        <input class="bar" type="text" name="comment" value="Comment"/>
+        <input class="button" type="submit" value="Add Comment"/>
+           </form>
+       <h4>Add Rattings</h4>
+       <form action="pexeso/rating">
+      <input class="bar" type="number" step="0.1" name="rating" VALUE="5">
+        <input class="button" type="submit" value="Add Rating"/>
+           </form>
+    </div>
+    </span>
+</div>
+
+
+
+</body>
+
+</html>
